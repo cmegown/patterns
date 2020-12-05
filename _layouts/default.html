@@ -15,23 +15,33 @@
       }
 
       body {
-        margin: 0;
+        margin: 1em 0;
         line-height: 1.5;
         font-family: sans-serif;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .container {
+        max-width: 50em;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1em;
+        padding-left: 1em;
       }
     </style>
   </head>
   <body>
-    <header>
-      <a href="/components/">Home</a>
-      <ul>
-        <li>
-          <a href="/components/tabs/">Tabs</a>
-        </li>
-      </ul>
-    </header>
-    <main>
-      {{ content }}
-    </main>
+    <div class="container">
+      <header>
+        <a href="/components/">Home</a>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+    </div>
   </body>
 </html>

@@ -1,37 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+---
 
-    <title>Tabs | Components</title>
+# Tabs
 
-    <style>
-      *,
-      *:before,
-      *:after {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        line-height: 1.5;
-        font-family: sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <a href="/components/">Home</a>
-      <ul>
-        <li>
-          <a href="/components/tabs/">Tabs</a>
-        </li>
-      </ul>
-    </header>
-    <main>
-      <style>
+<style>
   /**/
 </style>
 
@@ -112,11 +84,7 @@
 </div>
 
 <script type="module">
-  import Tabs from '../assets/js/tabs.js';
+  import Tabs from '../js/tabs.js';
 
   new Tabs();
 </script>
-
-    </main>
-  </body>
-</html>
