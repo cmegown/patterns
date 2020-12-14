@@ -4,17 +4,12 @@ permalink: /
 
 # Components
 
-<ul>
-  <li>
-    <a href="/components/accordions/">Accordions</a>
-  </li>
-  <li>
-    <a href="/components/dialogs/">Dialogs</a>
-  </li>
-  <li>
-    <a href="/components/tabs/">Tabs</a>
-  </li>
-  <li>
-    <a href="/components/tooltips/">Tooltips</a>
-  </li>
-</ul>
+<ol>
+  {% for page in site.pages %}
+    {% if page.title != 'Home' %}
+      <li>
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ol>
