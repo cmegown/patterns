@@ -1,0 +1,15 @@
+{% assign start = include.start %}
+{% assign count = include.start | plus: include.items | minus: 1 %}
+
+<div class="js-accordion">
+  {% for i in (start..count) %}
+    <section class="accordion">
+      <h2 class="accordion-heading">
+        <button class="accordion-trigger" type="button" aria-expanded="false">Item {{ i }}</button>
+      </h2>
+      <div class="accordion-panel" hidden>
+        <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+      </div>
+    </section>
+  {% endfor %}
+</div>
