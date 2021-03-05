@@ -1,0 +1,13 @@
+---
+layout: base
+title: Home
+---
+
+<h1>Components</h1>
+<ul>
+  {% for item in collections.components %}
+    <li>
+      <a href="{{ item.url | url }}">{{ item.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

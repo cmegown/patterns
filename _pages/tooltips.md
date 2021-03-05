@@ -1,6 +1,0 @@
----
----
-
-# Tooltips
-
-To do.
