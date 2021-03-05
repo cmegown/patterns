@@ -1,5 +1,0 @@
-{
-  "layout": "base",
-  "tags": "components",
-  "permalink": "/{{ title | slug }}/index.html"
-}
