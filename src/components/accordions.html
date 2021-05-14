@@ -2,4 +2,60 @@
 title: Accordions
 ---
 
-<p>Content goes here.</p>
+<div class="js-accordion">
+  <section>
+    <h2>Item 1</h2>
+    <div>
+      <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Item 2</h2>
+    <div>
+      <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Item 3</h2>
+    <div>
+      <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+    </div>
+  </section>
+</div>
+
+<div class="js-accordion">
+  <section>
+    <h2>Item 4</h2>
+    <div>
+      <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Item 5</h2>
+    <div>
+      <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Item 6</h2>
+    <div>
+      <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+    </div>
+  </section>
+</div>
+
+<script type="module">
+  class Accordion {
+    constructor(el) {
+      console.log(el);
+    }
+  }
+
+  ///
+
+  const accordions = document.querySelectorAll('.js-accordion');
+
+  accordions.forEach(accordion => {
+    new Accordion(accordion);
+  });
+</script>
