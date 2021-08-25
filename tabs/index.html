@@ -48,6 +48,70 @@
 
 <p>Documentation to do.</p>
 
+<h2>Examples</h2>
+<div class="js-tabs">
+  <ul role="tablist">
+    <li role="presentation">
+      <a id="tab-1" href="#panel-1" role="tab" aria-controls="panel-1" aria-selected="true" tabindex="-1">Panel 1</a>
+    </li>
+    <li role="presentation">
+      <a id="tab-2" href="#panel-2" role="tab" aria-controls="panel-2" aria-selected="false" tabindex="-1">Panel 2</a>
+    </li>
+    <li role="presentation">
+      <a id="tab-3" href="#panel-3" role="tab" aria-controls="panel-3" aria-selected="false" tabindex="-1">Panel 3</a>
+    </li>
+  </ul>
+  <section id="panel-1" role="tabpanel" aria-labelledby="tab-1" tabindex="-1">
+    <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+  </section>
+  <section id="panel-2" role="tabpanel" aria-labelledby="tab-2" tabindex="-1" hidden>
+    <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+  </section>
+  <section id="panel-3" role="tabpanel" aria-labelledby="tab-3" tabindex="-1" hidden>
+    <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+  </section>
+</div>
+<div class="js-tabs">
+  <ul role="tablist">
+    <li role="presentation">
+      <a id="tab-4" href="#panel-4" role="tab" aria-controls="panel-4" aria-selected="true" tabindex="-1">Panel 4</a>
+    </li>
+    <li role="presentation">
+      <a id="tab-5" href="#panel-5" role="tab" aria-controls="panel-5" aria-selected="false" tabindex="-1">Panel 5</a>
+    </li>
+    <li role="presentation">
+      <a id="tab-6" href="#panel-6" role="tab" aria-controls="panel-6" aria-selected="false" tabindex="-1">Panel 6</a>
+    </li>
+  </ul>
+  <section id="panel-4" role="tabpanel" aria-labelledby="tab-4" tabindex="-1">
+    <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+  </section>
+  <section id="panel-5" role="tabpanel" aria-labelledby="tab-5" tabindex="-1" hidden>
+    <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+  </section>
+  <section id="panel-6" role="tabpanel" aria-labelledby="tab-6" tabindex="-1" hidden>
+    <p>Lorem ipsum, dolor sit amet <a href="#">consectetur adipisicing elit</a>. Aliquid assumenda sunt cumque tempore obcaecati laboriosam eius vel quisquam? Rerum nam, esse maxime quibusdam earum sunt tempore autem fugiat architecto sed.</p>
+  </section>
+</div>
+
+<h2>References</h2>
+<ul>
+  <li>
+    <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel">WAI-ARIA Authoring Practices 1.1</a>
+  </li>
+</ul>
+
+<link rel="stylesheet" href="../assets/css/accordions.css">
+
+<script type="module">
+  import Tabs from '../assets/js/tabs.js';
+
+  const tabs = document.querySelectorAll('.js-tabs');
+  tabs.forEach(el => {
+    new Tabs(el);
+  });
+</script>
+
 
       </main>
     </div>
